@@ -5,7 +5,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	pvm "github.com/petrkotas/virt-vmconfig-crd/pkg/apis/persistentvm"
+	pvm "github.com/kubevirt-incubator/virt-persistentvm-crd/pkg/apis/persistentvm"
 )
 
 // SchemeGroupVersion is group version used to register pvm objects

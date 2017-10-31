@@ -19,10 +19,10 @@ limitations under the License.
 package v1alpha1
 
 import (
-	persistentvm_v1alpha1 "github.com/petrkotas/virt-vmconfig-crd/pkg/apis/persistentvm/v1alpha1"
-	versioned "github.com/petrkotas/virt-vmconfig-crd/pkg/client/clientset/versioned"
-	internalinterfaces "github.com/petrkotas/virt-vmconfig-crd/pkg/client/informers/externalversions/internalinterfaces"
-	v1alpha1 "github.com/petrkotas/virt-vmconfig-crd/pkg/client/listers/pvm/v1alpha1"
+	persistentvm_v1alpha1 "github.com/kubevirt-incubator/virt-persistentvm-crd/pkg/apis/persistentvm/v1alpha1"
+	versioned "github.com/kubevirt-incubator/virt-persistentvm-crd/pkg/client/clientset/versioned"
+	internalinterfaces "github.com/kubevirt-incubator/virt-persistentvm-crd/pkg/client/informers/externalversions/internalinterfaces"
+	v1alpha1 "github.com/kubevirt-incubator/virt-persistentvm-crd/pkg/client/listers/pvm/v1alpha1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	watch "k8s.io/apimachinery/pkg/watch"
