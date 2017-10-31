@@ -19,8 +19,8 @@ limitations under the License.
 package pvm
 
 import (
-	internalinterfaces "github.com/petrkotas/virt-vmconfig-crd/pkg/client/informers/externalversions/internalinterfaces"
-	v1alpha1 "github.com/petrkotas/virt-vmconfig-crd/pkg/client/informers/externalversions/pvm/v1alpha1"
+	internalinterfaces "github.com/kubevirt-incubator/virt-persistentvm-crd/pkg/client/informers/externalversions/internalinterfaces"
+	v1alpha1 "github.com/kubevirt-incubator/virt-persistentvm-crd/pkg/client/informers/externalversions/pvm/v1alpha1"
 )
 
 // Interface provides access to each of this group's versions.

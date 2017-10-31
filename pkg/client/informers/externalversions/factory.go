@@ -19,9 +19,9 @@ limitations under the License.
 package externalversions
 
 import (
-	versioned "github.com/petrkotas/virt-vmconfig-crd/pkg/client/clientset/versioned"
-	internalinterfaces "github.com/petrkotas/virt-vmconfig-crd/pkg/client/informers/externalversions/internalinterfaces"
-	pvm "github.com/petrkotas/virt-vmconfig-crd/pkg/client/informers/externalversions/pvm"
+	versioned "github.com/kubevirt-incubator/virt-persistentvm-crd/pkg/client/clientset/versioned"
+	internalinterfaces "github.com/kubevirt-incubator/virt-persistentvm-crd/pkg/client/informers/externalversions/internalinterfaces"
+	pvm "github.com/kubevirt-incubator/virt-persistentvm-crd/pkg/client/informers/externalversions/pvm"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	cache "k8s.io/client-go/tools/cache"
