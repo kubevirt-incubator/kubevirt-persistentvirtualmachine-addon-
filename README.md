@@ -125,7 +125,7 @@ cluster/kubectl.sh --core delete -f example.yaml
 To use the generated bindings in your own code, just import the package in the
 go file and start using it.
 ```go
-import pvmcrd github.com/petrkotas/virt-vmconfig-crd/...
+import pvmcrd github.com/kubevirt-incubator/virt-persistentvm-crd/...
 
 //TODO: Add proper example
 ```
