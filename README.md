@@ -21,7 +21,7 @@ developers are not supposed to modify them.
 Before you can do anything with this add-on, you have to get a local copy. 
 To use the codes further as a library, use the golang tool.
 ```bash
-go get github.com/petrkotas/virt-vmconfig-crd.git
+go get github.com/kubevirt-incubator/virt-persistentvm-crd
 ```
 With this method, you get functioning codes stored in your local `GOPATH`.
 
