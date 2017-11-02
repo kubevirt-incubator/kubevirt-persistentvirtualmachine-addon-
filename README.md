@@ -1,4 +1,4 @@
-# Persistent Virtual Machine Kubernetes add-on
+# Persistent Virtual Machine KubeVirt add-on
 
 This add-on provides the functionality to store VM configuration in the
 Kubernetes cluster. It is designed to provide common grounds for building 
