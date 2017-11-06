@@ -17,9 +17,9 @@ limitations under the License.
 package fake
 
 import (
-	clientset "github.com/kubevirt-incubator/virt-persistentvm-crd/pkg/client/clientset/versioned"
-	pvmv1alpha1 "github.com/kubevirt-incubator/virt-persistentvm-crd/pkg/client/clientset/versioned/typed/pvm/v1alpha1"
-	fakepvmv1alpha1 "github.com/kubevirt-incubator/virt-persistentvm-crd/pkg/client/clientset/versioned/typed/pvm/v1alpha1/fake"
+	clientset "github.com/kubevirt-incubator/persistentvirtualmachine-addon/pkg/client/clientset/versioned"
+	pvmv1alpha1 "github.com/kubevirt-incubator/persistentvirtualmachine-addon/pkg/client/clientset/versioned/typed/pvm/v1alpha1"
+	fakepvmv1alpha1 "github.com/kubevirt-incubator/persistentvirtualmachine-addon/pkg/client/clientset/versioned/typed/pvm/v1alpha1/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"
