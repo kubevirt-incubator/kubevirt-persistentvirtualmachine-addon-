@@ -21,7 +21,7 @@ package externalversions
 import (
 	versioned "github.com/kubevirt-incubator/persistentvirtualmachine-addon/pkg/client/clientset/versioned"
 	internalinterfaces "github.com/kubevirt-incubator/persistentvirtualmachine-addon/pkg/client/informers/externalversions/internalinterfaces"
-	pvm "github.com/kubevirt-incubator/persistentvirtualmachine-addon/pkg/client/informers/externalversions/pvm"
+	persistentvirtualmachines "github.com/kubevirt-incubator/persistentvirtualmachine-addon/pkg/client/informers/externalversions/persistentvirtualmachines"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	cache "k8s.io/client-go/tools/cache"
@@ -110,9 +110,9 @@ type SharedInformerFactory interface {
 	ForResource(resource schema.GroupVersionResource) (GenericInformer, error)
 	WaitForCacheSync(stopCh <-chan struct{}) map[reflect.Type]bool
 
-	Pvm() pvm.Interface
+	Persistentvirtualmachines() persistentvirtualmachines.Interface
 }
 
-func (f *sharedInformerFactory) Pvm() pvm.Interface {
-	return pvm.New(f)
+func (f *sharedInformerFactory) Persistentvirtualmachines() persistentvirtualmachines.Interface {
+	return persistentvirtualmachines.New(f)
 }

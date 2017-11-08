@@ -18,8 +18,8 @@ package fake
 
 import (
 	clientset "github.com/kubevirt-incubator/persistentvirtualmachine-addon/pkg/client/clientset/versioned"
-	pvmv1alpha1 "github.com/kubevirt-incubator/persistentvirtualmachine-addon/pkg/client/clientset/versioned/typed/pvm/v1alpha1"
-	fakepvmv1alpha1 "github.com/kubevirt-incubator/persistentvirtualmachine-addon/pkg/client/clientset/versioned/typed/pvm/v1alpha1/fake"
+	persistentvirtualmachinesv1alpha1 "github.com/kubevirt-incubator/persistentvirtualmachine-addon/pkg/client/clientset/versioned/typed/persistentvirtualmachines/v1alpha1"
+	fakepersistentvirtualmachinesv1alpha1 "github.com/kubevirt-incubator/persistentvirtualmachine-addon/pkg/client/clientset/versioned/typed/persistentvirtualmachines/v1alpha1/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"
@@ -60,12 +60,12 @@ func (c *Clientset) Discovery() discovery.DiscoveryInterface {
 
 var _ clientset.Interface = &Clientset{}
 
-// PvmV1alpha1 retrieves the PvmV1alpha1Client
-func (c *Clientset) PvmV1alpha1() pvmv1alpha1.PvmV1alpha1Interface {
-	return &fakepvmv1alpha1.FakePvmV1alpha1{Fake: &c.Fake}
+// PersistentvirtualmachinesV1alpha1 retrieves the PersistentvirtualmachinesV1alpha1Client
+func (c *Clientset) PersistentvirtualmachinesV1alpha1() persistentvirtualmachinesv1alpha1.PersistentvirtualmachinesV1alpha1Interface {
+	return &fakepersistentvirtualmachinesv1alpha1.FakePersistentvirtualmachinesV1alpha1{Fake: &c.Fake}
 }
 
-// Pvm retrieves the PvmV1alpha1Client
-func (c *Clientset) Pvm() pvmv1alpha1.PvmV1alpha1Interface {
-	return &fakepvmv1alpha1.FakePvmV1alpha1{Fake: &c.Fake}
+// Persistentvirtualmachines retrieves the PersistentvirtualmachinesV1alpha1Client
+func (c *Clientset) Persistentvirtualmachines() persistentvirtualmachinesv1alpha1.PersistentvirtualmachinesV1alpha1Interface {
+	return &fakepersistentvirtualmachinesv1alpha1.FakePersistentvirtualmachinesV1alpha1{Fake: &c.Fake}
 }
