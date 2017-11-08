@@ -1,10 +1,9 @@
 apiVersion: apiextensions.k8s.io/v1beta1
 kind: CustomResourceDefinition
 metadata:
-  name: persistentvirtualmachines.kubevirt.io
+  name: pvms.persistentvm.kubevirt.io
 spec:
-  scope: Namespaced
-  group: kubevirt.io
+  group: persistentvm.kubevirt.io
   version: v1alpha1
   names:
     kind: PersistentVirtualMachine

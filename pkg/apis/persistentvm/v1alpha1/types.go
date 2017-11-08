@@ -7,7 +7,6 @@ import (
 // +genclient
 // +genclient:noStatus
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
-// +resource:path=pvm
 
 // PVM persistent VM custom resource
 type PVM struct {
@@ -30,7 +29,6 @@ type PVMStatus struct {
 }
 
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
-// +resource:path=pvms
 
 // PVMList is a list of VMConfigs.
 type PVMList struct {
