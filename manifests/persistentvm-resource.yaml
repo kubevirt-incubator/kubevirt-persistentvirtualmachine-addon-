@@ -6,9 +6,6 @@ spec:
   group: persistentvm.kubevirt.io
   version: v1alpha1
   names:
-    kind: PersistentVirtualMachine
-    plural: persistentvirtualmachines
-    singular: persistentvirtualmachine
-    shortNames:
-    - pvm
-    - pvms
+    kind: PVM
+    plural: pvms
+    singular: pvm
