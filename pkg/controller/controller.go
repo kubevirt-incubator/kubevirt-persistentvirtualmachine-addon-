@@ -62,7 +62,7 @@ func NewController(
 
 	controller := &PVMController{
 		pvmClientSet: pvmclientset,
-		pvmLister:    pvmInformer.Informer(),
+		pvmLister:    pvmInformer.Lister(),
 		pvmSynced:    pvmInformer.Informer().HasSynced,
 		workqueue:    workqueue.NewNamedRateLimitingQueue(workqueue.DefaultControllerRateLimiter(), "PVMs"),
 		recorder:     recorder,
