@@ -5,12 +5,16 @@ required = ["k8s.io/code-generator/cmd/client-gen"]
   branch = "release-1.8"
 
 [[constraint]]
-  name = "k8s.io/client-go"
-  branch = "release-5.0"
-
-[[constraint]]
   name = "k8s.io/code-generator"
   branch = "release-1.8"
+
+[[constraint]]
+  name = "github.com/Sirupsen/logrus"
+  branch = "master"
+
+[[constraint]]
+  branch = "release-5.0"
+  name = "k8s.io/client-go"
 
 # goland/dep does not follow k8s.io/code-generator's Godeps.json and gengo's master
 # version does not work with release-1.8 k8s.io/code-generator. So we have to
