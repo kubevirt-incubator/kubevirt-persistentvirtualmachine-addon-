@@ -75,7 +75,10 @@ func NewController(
 			controller.addToQueue(obj)
 		},
 		UpdateFunc: func(old, new interface{}) {
-			log.WithField("obj", new).Info("Updated object")
+			log.WithFields(log.Fields{
+				"old": old,
+				"new": new,
+			}).Info("Updated object")
 			controller.addToQueue(new)
 		},
 		DeleteFunc: func(obj interface{}) {
