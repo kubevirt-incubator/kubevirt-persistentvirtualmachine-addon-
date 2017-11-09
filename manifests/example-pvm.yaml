@@ -1,5 +1,5 @@
-apiVersion: kubevirt.io/v1alpha1
-kind: PersistentVirtualMachine
+apiVersion:  persistentvm.kubevirt.io/v1alpha1
+kind: PVM
 metadata:
   name: testvm
 spec:
